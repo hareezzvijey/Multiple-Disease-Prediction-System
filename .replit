@@ -1,0 +1,14 @@
+language = "python3"
+run = "streamlit run Multiple-Disease-Prediction-System/app.py"
+modules = ["python-3.11"]
+
+[nix]
+channel = "stable-25_05"
+
+[deployment]
+run = ["sh", "-c", "streamlit run Multiple-Disease-Prediction-System/app.py"]
+
+[[ports]]
+localPort = 8501
+externalPort = 80
+
